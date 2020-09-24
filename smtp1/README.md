@@ -1,7 +1,9 @@
 # SMTP example 1
 
 Download <a href="https://raw.githubusercontent.com/ChristofSchwarz/qs_log4net_appender/master/smtp1/LocalLogConfig.xml">here</a>
-This SMTP appender settings assume that you have multiple groups of recipients for different apps
+and save it into folder C:\ProgramData\Qlik\Sense\Scheduler of your Sense Server node.
+
+This SMTP appender config assume that you have **multiple groups of recipients for different apps**.
 
 To accomplish this, there are sections with "whitelists" of filter settings, and one with
 the rest ("blacklist"). 
