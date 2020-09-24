@@ -1,3 +1,5 @@
+# SMTP example 1
+
 This SMTP appender settings assume that you have multiple groups of recipients for different apps
 
 To accomplish this, there are sections with "whitelists" of filter settings, and one with
