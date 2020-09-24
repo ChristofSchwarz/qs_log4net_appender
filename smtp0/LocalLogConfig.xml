@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<configuration>
+
+	<appender name="sendMail" type="log4net.Appender.SmtpAppender">
+		<evaluator type="log4net.Core.LevelEvaluator">
+			<param name="threshold" value="ERROR"/>
+		</evaluator>
+		<param name="to" value="christof.schwarz@databridge.ch" />
+		<param name="from" value="christof.schwarz@gmx.at" />
+		<param name="smtpHost" value="mail.gmx.net" />
+		<param name="port" value="587" />
+		<param name="EnableSsl" value="true" />
+		<param name="Authentication" value="Basic" />
+		<param name="username" value="XXXXX" />
+		<param name="password" value="YYYYY" />
+		<param name="bufferSize" value="0" /> <!-- dont change -->
+		<param name="lossy" value="true" /> <!-- dont change -->
+		<param name="subject" value="Qlik Sense Server QS1: App reload failed" />		
+		<layout type="log4net.Layout.PatternLayout">
+			<param name="conversionPattern" 
+			value="You receive this email because of settings for appender 'SendMail1' 
+in LocalLogConfig.xml in C:\ProgramData\Qlik\Sense\Scheduler%newline%
+Date: %date %newline
+Task Name: %property{TaskName}%newline
+AppName: %property{AppName}%newline
+AppId: %property{AppId}%newline
+Error Message: %message%newline%newline%newline
+To see more go to https://QS1/qmc/tasks?ID=%property{TaskId}" />
+		</layout>
+	</appender> 
+
+	<logger name="System.Scheduler.Scheduler.Slave.Tasks.ReloadTask">
+		<appender-ref ref="sendMail" />
+	</logger>	
+</configuration>
