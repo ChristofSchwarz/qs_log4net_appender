@@ -12,9 +12,9 @@ Resource Links, key work is from Levi Turner
  
 I share the following configuration examples:
 
-
 | Example | Description | 
 | ------- | ----------- | 
-| <a href="smtp0">0</a> | "forward" querystring |
-| <a href="smtp1">1</a> | "forward" querystring |
+| <a href="smtp0">0</a> | Simpliest case, one list of recipients for all app reload failures |
+| <a href="smtp1">1</a> | Complex case, differnet list of recipients for different app's reload failures |
 
+Enjoy
