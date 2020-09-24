@@ -4,7 +4,7 @@ This SMTP appender config is the simpliest possible. Any app reload fail found o
 will go to the same email recipients.
 
 Download <a href="https://raw.githubusercontent.com/ChristofSchwarz/qs_log4net_appender/master/smtp0/LocalLogConfig.xml">here</a>
-and save it into folder ``C:\ProgramData\Qlik\Sense\Scheduler of your Sense Server node.
+and save it into folder `C:\ProgramData\Qlik\Sense\Scheduler` of your Sense Server node.
 
 After download fix the following params in the <appender> block:
  * smtpHost, port, EnableSsl, Authentication, username, password ... is for your SMTP server
