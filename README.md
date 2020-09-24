@@ -4,7 +4,7 @@ Qlik Sense Enterprise for Windows uses <a href="https://logging.apache.org/log4n
 that are triggered at the very moment when also a log line is created. This allows, for example with the smtpAppender, to instantly send an
 email. This is what I am focussing on in this git.
 
-Resource Links, key work is from Levi Turner
+Resource Links, key work is from Qlik Presales **Levi Turner**
  - https://github.com/levi-turner/getting_notified_from_qliksense
  - https://community.qlik.com/t5/Qlik-Architecture-Deep-Dive-Blog/Getting-Notified-from-Qlik-Sense/ba-p/1582429
  - https://youtu.be/dnDqzN8pj70
