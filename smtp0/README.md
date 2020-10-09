@@ -13,4 +13,4 @@ After download fix the following params in the <appender> block:
  * subject ... email subject, I recommend to mention the sense server name here
  * maybe adapt the conversionPattern if you want a different email body
 
-Since this example has no further filters than a Logging level of ERROR, there is just an &gt;elevator&lt; tag but no &gt;filter&lt; tags.
+Since this example has no further filters than a Logging level of ERROR, there is just an &lt;elevator&gt; tag but no &lt;filter&gt; tags.
