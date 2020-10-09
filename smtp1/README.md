@@ -2,7 +2,7 @@
 
 This SMTP appender config assume that you have **multiple groups of email recipients for different apps**. For this reason
 there are two (or more) appenders blocks defined, called like SendMail1, SendMail2 ... This is defined on the top 
-of the file and also included in the <appender-ref> tag at the bottom.
+of the file and also included in the `<appender-ref>` tag at the bottom.
 
 To accomplish different recipients for different apps, there are 1 to N sections with "whitelists" of filter settings, 
 and - if you want all other reload failures to go to a default recipient list - one "blacklist" with the rest. 
